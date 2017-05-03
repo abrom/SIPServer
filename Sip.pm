@@ -234,7 +234,7 @@ sub write_msg {
         }
         $msg .= 'AZ';
         $cksum = checksum($msg);
-        $msg .= sprintf('%04.4X', $cksum);
+        $msg .= $cksum;
     }
 
 
